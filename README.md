@@ -1,4 +1,4 @@
-# DESCRIPTION
+# 
 afedrec is a simple recorder for the AFEDRI SDR-Net. It captures the I/Q UDP stream and
 saves it into a WAV file suitable for playback in sdr software (HDSDR, SDR-Console, SpectraVue, etc).
 LO, timestamp, and sample rate metadata is saved in a Winrad compatible header.
