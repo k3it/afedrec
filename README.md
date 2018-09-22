@@ -1,3 +1,5 @@
+![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
+
 # 
 afedrec is a simple recorder for the AFEDRI SDR-Net. It captures the I/Q UDP stream and
 saves it into a WAV file suitable for playback in sdr software (HDSDR, SDR-Console, SpectraVue, etc).
