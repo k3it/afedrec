@@ -260,6 +260,10 @@ parser.add_option("-W", "--file-size", type="int", default=1000,
                   help="WAV file split size in MB [default=%default]")
 parser.add_option("-g", "--gain", type="int",
                   help="Set VGA gain in dB")
+parser.add_option("-i", "--ip", default="0.0.0.0",
+                  help="IP address of the Afedri")
+parser.add_option("-p", "--port", type="int", default=5000 ,
+                  help="Port number of the Afedri")
 
 
 (options,args) = parser.parse_args()
@@ -277,7 +281,7 @@ MAX_SIZE=options.file_size*1048576
 
 print "AFEDRI RF Recorder v2.1b, 2012 k3it\n"
 #create an afedri object
-a=afedri()
+a=afedri(sdr_address=options.ip, sdr_port=options.port)
 
 # verify and correct sampling rate according to the main clock speed
 # Alex Trushkin code 4z5lv:
