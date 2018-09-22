@@ -262,7 +262,7 @@ parser.add_option("-g", "--gain", type="int",
                   help="Set VGA gain in dB")
 parser.add_option("-i", "--ip", default="0.0.0.0",
                   help="IP address of the Afedri")
-parser.add_option("-p", "--port", type="int", default=5000 ,
+parser.add_option("-p", "--port", type="int", default=50000 ,
                   help="Port number of the Afedri")
 
 
